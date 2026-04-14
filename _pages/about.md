@@ -8,7 +8,7 @@ hide_title: true
 profile:
   align: right
   image: photo.jpeg
-  image_circular: true
+  image_circular: false
   more_info: >
     <p class="profile-name">Ananth Shreekumar</p>
     <p>PhD Candidate</p>
@@ -20,7 +20,7 @@ I am a graduate student pursuing my PhD in computer science at <a target="_blank
 <br>
 <br>
 
-#### **Publications**
+<h4 id="publications"><strong>Publications</strong></h4>
 
 [Formalizing the Safety, Security, and Functional Properties of Agentic AI Systems](https://arxiv.org/abs/2510.14133)  
 Edoardo Allegrini, Ananth Shreekumar, and Z. Berkay Celik  
@@ -44,7 +44,7 @@ _Medical Imaging meets NeurIPS workshop, Neural Information Processing Systems_.
 <br>
 <br>
 
-#### **Service**
+<h4 id="service"><strong>Service</strong></h4>
 
 ###### **Exernal Reviewer**
 
@@ -52,7 +52,7 @@ SIGKDD&nbsp;(2026), NDSS&nbsp;(2025,&nbsp;2026), IEEE&nbsp;S&P&nbsp;(2025,&nbsp;
 <br>
 <br>
 
-#### **Teaching**
+<h4 id="teaching"><strong>Teaching</strong></h4>
 
 ###### **Graduate Teaching Assistant**
 
