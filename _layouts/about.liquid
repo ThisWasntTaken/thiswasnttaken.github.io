@@ -17,11 +17,12 @@ layout: default
   {% endunless %}
 
   <article>
-    <div class="about-layout{% unless page.profile %} about-layout-no-profile{% endunless %}">
-      <div class="about-main">{{ content }}</div>
+    <div class="row align-items-start">
+      <div class="{% if page.profile %}col-md pr-md-5{% else %}col-12{% endif %} about-main">{{ content }}</div>
 
       {% if page.profile %}
-        <aside class="profile about-profile">
+        <aside class="col-12 col-md-auto mt-4 mt-md-0">
+          <div class="profile about-profile" style="width: min(230px, 100%);">
           {% if page.profile.image %}
             {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
             {% if page.profile.image_circular %}
@@ -48,6 +49,7 @@ layout: default
               {% endif %}
             </div>
           {% endif %}
+          </div>
         </aside>
       {% endif %}
     </div>
