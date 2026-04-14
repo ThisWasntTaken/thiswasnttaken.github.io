@@ -16,7 +16,7 @@ profile:
     <p>Purdue University</p>
 ---
 
-I am a graduate student pursuing my PhD in computer science at <a target="_blank" rel="noopener noreferrer" href="https://www.purdue.edu/">Purdue University</a> where I am advised by [Z. Berkay Celik](https://www.cs.purdue.edu/people/faculty/zcelik.html) and [Dongyan Xu](https://www.cs.purdue.edu/people/faculty/dxu.html). Before that, I obtained my master of science in computer science degree also at Purdue and an integrated master of technology degree in computer science at the <a target="_blank" rel="noopener noreferrer" href="https://www.iiitb.ac.in/">International Institute of Information Technology Bangalore</a>.
+I am a graduate student pursuing my PhD in computer science at <a target="_blank" rel="noopener noreferrer" href="https://www.purdue.edu/">Purdue University</a> where I am advised by [Z.&nbsp;Berkay&nbsp;Celik](https://www.cs.purdue.edu/people/faculty/zcelik.html) and [Dongyan&nbsp;Xu](https://www.cs.purdue.edu/people/faculty/dxu.html). Before that, I obtained my master of science in computer science degree also at Purdue and an integrated master of technology degree in computer science at the <a target="_blank" rel="noopener noreferrer" href="https://www.iiitb.ac.in/">International Institute of Information Technology Bangalore</a>.
 <br>
 <br>
 
@@ -48,7 +48,7 @@ _Medical Imaging meets NeurIPS workshop, Neural Information Processing Systems_.
 
 ###### **Exernal Reviewer**
 
-SIGKDD (2026), NDSS (2025, 2026), IEEE S&P (2025, 2026), CCS (2025), NeurIPS (2025), AAAI (2026), ICLR (2026)
+SIGKDD&nbsp;(2026), NDSS&nbsp;(2025,&nbsp;2026), IEEE&nbsp;S&P&nbsp;(2025,&nbsp;2026), CCS&nbsp;(2025), NeurIPS&nbsp;(2025), AAAI&nbsp;(2026), ICLR&nbsp;(2026)
 <br>
 <br>
 

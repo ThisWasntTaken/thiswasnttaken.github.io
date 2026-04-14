@@ -2,6 +2,8 @@
 layout: default
 ---
 <div class="post">
+  {% assign outer_spacer_width = '100px' %}
+  {% assign profile_column_width = '170px' %}
   {% unless page.hide_title %}
     <header class="post-header">
       <h1 class="post-title">
@@ -17,40 +19,50 @@ layout: default
   {% endunless %}
 
   <article>
-    <div class="row align-items-start">
-      <div class="{% if page.profile %}col-md pr-md-5{% else %}col-12{% endif %} about-main">{{ content }}</div>
+    <div class="row align-items-start justify-content-center">
+      {% if page.profile %}
+        <div class="d-none d-md-block col-md-auto" aria-hidden="true">
+          <div style="width: {{ outer_spacer_width }};"></div>
+        </div>
+      {% endif %}
+
+      <div class="{% if page.profile %}col-md px-md-4{% else %}col-12{% endif %} about-main">{{ content }}</div>
 
       {% if page.profile %}
-        <aside class="col-12 col-md-auto mt-4 mt-md-0">
-          <div class="profile about-profile" style="width: min(230px, 100%);">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 768px) 28vw, 70vw{% endcapture %}
-            {%
-              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-              cache_bust=true
-            %}
-          {% endif %}
-          {% if page.profile.more_info %}
-            <div class="more-info">{{ page.profile.more_info }}</div>
-          {% endif %}
-          {% if page.social %}
-            <div class="social about-profile-social">
-              <div class="contact-icons">{% social_links %}</div>
-
-              {% assign contact_note_text = site.contact_note | default: '' | strip %}
-              {% if contact_note_text != '' %}
-                <div class="contact-note">{{ site.contact_note }}</div>
+        <aside class="col-12 col-md-auto mt-4 mt-md-0 px-md-0">
+          <div class="profile about-profile" style="width: {{ profile_column_width }}; max-width: 100%;">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
               {% endif %}
-            </div>
-          {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ profile_column_width }}, (min-width: 768px) {{ profile_column_width }}, 70vw{% endcapture %}
+              {%
+                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+                cache_bust=true
+              %}
+            {% endif %}
+            {% if page.profile.more_info %}
+              <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+            {% if page.social %}
+              <div class="social about-profile-social">
+                <div class="contact-icons">{% social_links %}</div>
+
+                {% assign contact_note_text = site.contact_note | default: '' | strip %}
+                {% if contact_note_text != '' %}
+                  <div class="contact-note">{{ site.contact_note }}</div>
+                {% endif %}
+              </div>
+            {% endif %}
           </div>
         </aside>
+
+        <div class="d-none d-md-block col-md-auto" aria-hidden="true">
+          <div style="width: {{ outer_spacer_width }};"></div>
+        </div>
       {% endif %}
     </div>
 

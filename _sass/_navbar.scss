@@ -183,6 +183,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .navbar.navbar-light .navbar-brand.title {
+    margin-left: calc(140px);
+  }
+}
+
 #search-toggle {
   padding: 0;
   border: 0;
