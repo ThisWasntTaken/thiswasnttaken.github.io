@@ -17,40 +17,40 @@ layout: default
   {% endunless %}
 
   <article>
-    {% if page.profile %}
-      <div class="profile about-profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        {% if page.social %}
-          <div class="social about-profile-social">
-            <div class="contact-icons">{% social_links %}</div>
+    <div class="about-layout{% unless page.profile %} about-layout-no-profile{% endunless %}">
+      <div class="about-main">{{ content }}</div>
 
-            {% assign contact_note_text = site.contact_note | default: '' | strip %}
-            {% if contact_note_text != '' %}
-              <div class="contact-note">{{ site.contact_note }}</div>
+      {% if page.profile %}
+        <aside class="profile about-profile">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-          </div>
-        {% endif %}
-      </div>
-    {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 768px) 28vw, 70vw{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+          {% if page.social %}
+            <div class="social about-profile-social">
+              <div class="contact-icons">{% social_links %}</div>
 
-    <div class="clearfix">{{ content }}</div>
+              {% assign contact_note_text = site.contact_note | default: '' | strip %}
+              {% if contact_note_text != '' %}
+                <div class="contact-note">{{ site.contact_note }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </aside>
+      {% endif %}
+    </div>
 
     <!-- Social -->
     {% if page.social and page.profile == nil %}

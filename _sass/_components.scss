@@ -99,12 +99,25 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.profile.float-right {
-  margin-left: 1rem;
+.about-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
 }
 
-.profile.float-left {
-  margin-right: 1rem;
+.about-main {
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 230px);
+    column-gap: 3rem;
+  }
+
+  .about-layout-no-profile {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (min-width: 576px) {
@@ -116,6 +129,10 @@ ul.task-list input[type="checkbox"] {
         display: block;
       }
     }
+  }
+
+  .about-layout .profile {
+    width: 100%;
   }
 }
 
