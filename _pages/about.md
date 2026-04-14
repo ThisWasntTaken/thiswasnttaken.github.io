@@ -60,7 +60,7 @@ CS361 Great Issues in Computer Science. Purdue University. Spring 2025.
 CS529 Security Analytics. Purdue University. Fall 2024.  
 CS240 Programming in C. Purdue University. Fall 2023.  
 CS352 Compilers: Principles and Practice. Purdue University. Spring 2023.  
-MA165 Calculus I. Purdue University. Fall 2022
+MA165 Calculus I. Purdue University. Fall 2022.
 
 ###### **Guest Lecturer**
 CS197 Freshman Honors Seminar. Purdue University. Spring 2026.  
