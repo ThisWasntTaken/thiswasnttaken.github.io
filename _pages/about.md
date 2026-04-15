@@ -30,7 +30,7 @@ _Agents in the Wild: Safety, Security, and Beyond Workshop, International Confer
 Brandon Lee\*, Devin Ersoy\*, Ananth Shreekumar, Arjun Arunasalam, Muhammad Ibrahim, Antonio Bianchi, and Z. Berkay Celik  
 _IEEE Symposium on Security and Privacy_. 2026.
 
-[Improving Sepsis Prediction in Intensive Care with SepsisAI: A clinical decision support system with a focus on minimizing false alarms](https://doi.org/10.1371/journal.pdig.0000569)  
+[Improving Sepsis Prediction in Intensive Care with SepsisAI: A Clinical Decision support system with a focus on minimizing false alarms](https://doi.org/10.1371/journal.pdig.0000569)  
 Ankit Gupta, Ruchi Chauhan, Saravanan G, and Ananth Shreekumar  
 _PLOS Digital Health_. 2024.
 
