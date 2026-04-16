@@ -16,7 +16,7 @@ profile:
     <p>Purdue University</p>
 ---
 
-I am a graduate student pursuing my PhD in computer science at <a target="_blank" rel="noopener noreferrer" href="https://www.purdue.edu/">Purdue University</a> where I am advised by [Z.&nbsp;Berkay&nbsp;Celik](https://www.cs.purdue.edu/people/faculty/zcelik.html) and [Dongyan&nbsp;Xu](https://www.cs.purdue.edu/people/faculty/dxu.html). Before that, I obtained my master of science in computer science degree also at Purdue and an integrated master of technology degree in computer science at the <a target="_blank" rel="noopener noreferrer" href="https://www.iiitb.ac.in/">International Institute of Information Technology Bangalore</a>.
+I am a graduate student pursuing my PhD in computer science at [Purdue University, West Lafayette](https://www.purdue.edu/). I am advised by [Z.&nbsp;Berkay&nbsp;Celik](https://www.cs.purdue.edu/people/faculty/zcelik.html) and [Dongyan&nbsp;Xu](https://www.cs.purdue.edu/people/faculty/dxu.html). Before that, I obtained my master of science in computer science degree also at Purdue and an integrated master of technology degree in computer science at the [International Institute of Information Technology Bangalore](https://www.iiitb.ac.in/).
 <br>
 <br>
 
